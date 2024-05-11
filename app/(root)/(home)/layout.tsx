@@ -1,6 +1,12 @@
 import React, { ReactNode } from 'react'
 import Navbar from '@/components/Navbar'
 import Sidebar from '@/components/Sidebar'
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Zoom Clone",
+  description: "Video calling app using next"
+};
 
 const HomeLayout = ({ children } : { children: ReactNode }) => {
   return (
